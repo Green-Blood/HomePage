@@ -20,7 +20,7 @@ const Main = ({ children, router }) => {
         <meta name="author" content="StranGen Group" />
         <link rel="apple-touch-icon" href="Watermelon_logo.jpg" />
         <link rel="shortcut icon" href="/Watermelon_logo.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="Takuya Matsuyama" />
+        <meta name="twitter:title" content="Jey Odilkhujaev" />
         {/*<meta name="twitter:card" content="summary_large_image" />*/}
         {/*<meta name="twitter:site" content="@craftzdog" />*/}
         {/*<meta name="twitter:creator" content="@craftzdog" />*/}
