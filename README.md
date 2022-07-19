@@ -1,6 +1,6 @@
 # Jey's Homepage
 
-[https://jey-homepage.vercel.app/](https://jey-homepage.vercel.app/)
+[https://bit.ly/jey-homepage/](https://bit.ly/jey-homepage/)
 
 ## Stack
 
