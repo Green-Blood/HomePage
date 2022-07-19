@@ -247,7 +247,7 @@ const Home = () => (
                         </Link>
                     </ListItem>
                     <ListItem>
-                        <Link href="https://discord.gg/hzqh4QBx" target="_blank">
+                        <Link href="https://discord.gg/GqUUh54" target="_blank">
                             <Button
                                 variant="ghost"
                                 colorScheme="teal"
