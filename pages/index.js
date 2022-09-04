@@ -135,16 +135,20 @@ const Home = () => (
                 </Heading>
                 <BioSection>
                     <BioYear>2022</BioYear>
-                    Working full time as Unity developer
-                    at <Link href="https://redrift.com/" target="_blank">Redrift</Link>. We are creating mobile
-                    multiplayer NFT based match3 game called <Link href="https://puzzleroyale.io"
-                                                                   target="_blank"> Puzzle
-                    Royale</Link>
+                    Started working as a part-time unity developer in September at <Link href="https://www.datasakura.com//" target="_blank">DataSakura</Link>. outsource company which helped making fruit ninja, cut the rope and etc.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022</BioYear>
+                    Worked as a full time Unity developer
+                    at <Link href="https://redrift.com/" target="_blank">Redrift</Link>. We created mobile
+                    multiplayer NFT based match3 game called <Link href="https://puzzleroyale.io" target="_blank"> Puzzle Royale</Link>
+                    Finished working on company, because of company's political and economical problems.
                 </BioSection>
                 <BioSection>
                     <BioYear>2022</BioYear>
                     Worked part time as Unity developer
-                    at <Link href="https://neotech.uz/en/" target="_blank"> NeoTech </Link> Created together an online card game, helped with game design
+                    at <Link href="https://neotech.uz/en/" target="_blank"> NeoTech </Link> Created together an online
+                    card game, helped with game design
                     Coordinated the entire game part of the project and did code review
                     Connected to the backend, added analytics, etc.
 
