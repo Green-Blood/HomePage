@@ -22,7 +22,7 @@ const Posts = () => (
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="How to build a portfolio website"
+            title="My #1 Devlog: How I Started Game Development as a Full Time Student/Worker"
             thumbnail={thumbdevlog1}
             href="https://www.youtube.com/watch?v=WmPxCJVcKGY&t=8s&ab_channel=Strangen"
           />
