@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-// import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
+import thumbdevlog1 from '../public/images/contents/FirstDevlog.png'
 // import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
 // import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
 // import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
@@ -20,12 +20,12 @@ const Posts = () => (
       </Heading>
 
       <Section delay={0.1}>
-      {/*  <SimpleGrid columns={[1, 2, 2]} gap={6}>*/}
-      {/*    <GridItem*/}
-      {/*      title="How to build a portfolio website"*/}
-      {/*      thumbnail={thumbPortfolio}*/}
-      {/*      href="https://www.youtube.com/watch?v=bSMZgXzC9AA"*/}
-      {/*    />*/}
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            title="How to build a portfolio website"
+            thumbnail={thumbdevlog1}
+            href="https://www.youtube.com/watch?v=WmPxCJVcKGY&t=8s&ab_channel=Strangen"
+          />
       {/*    <GridItem*/}
       {/*      title="How to take notes in Markdown efficiently with Inkdrop"*/}
       {/*      thumbnail={thumbHowToUseInkdrop}*/}
@@ -71,7 +71,7 @@ const Posts = () => (
       {/*      thumbnail={thumb50xFaster}*/}
       {/*      href="https://www.youtube.com/watch?v=vj723NlrIQc"*/}
       {/*    />*/}
-      {/*  </SimpleGrid>*/}
+        </SimpleGrid>
       </Section>
     </Container>
   </Layout>
