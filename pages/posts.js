@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
 import thumbdevlog1 from '../public/images/contents/FirstDevlog.png'
+import thumbdevlog2 from '../public/images/contents/FIRSTENEMY.png'
 // import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
 // import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
 // import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
@@ -26,11 +27,11 @@ const Posts = () => (
             thumbnail={thumbdevlog1}
             href="https://www.youtube.com/watch?v=WmPxCJVcKGY&t=8s&ab_channel=Strangen"
           />
-      {/*    <GridItem*/}
-      {/*      title="How to take notes in Markdown efficiently with Inkdrop"*/}
-      {/*      thumbnail={thumbHowToUseInkdrop}*/}
-      {/*      href="https://www.youtube.com/watch?v=-qBavwqc_mY"*/}
-      {/*    />*/}
+          <GridItem
+            title="How to be Prepared for Your First Enemy in a Game and Every Character thereafter. Game Devlog #2"
+            thumbnail={thumbdevlog2}
+            href="https://www.youtube.com/watch?v=0CR84iUusmQ&t=42s&ab_channel=Strangen"
+          />
       {/*    <GridItem*/}
       {/*      title="My Fish workflow"*/}
       {/*      thumbnail={thumbFishWorkflow}*/}
