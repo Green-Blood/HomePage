@@ -15,7 +15,7 @@ const Work = () => (
     <Layout title="Daily Life of the KLU Student">
         <Container>
             <Title>
-                Empty Poster <Badge>2022</Badge>
+                Daily Life of KLU Student<Badge>2022</Badge>
             </Title>
             <P>
                 The game that we made at the game jam, related to the daily life of a usual KLU student
@@ -63,16 +63,6 @@ const Work = () => (
                     </Link>
                 </ListItem>
             </List>
-
-            <AspectRatio maxW="640px" ratio={1.7} my={4}>
-                <iframe
-                    src="https://www.youtube.com/embed/4X6mKip5qlY"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-            </AspectRatio>
 
             <WorkImage src="/images/works/DailyLife/DailyLife1.png" alt="DailyLife1"/>
             <WorkImage src="/images/works/DailyLife/DailyLife2.png" alt="DailyLife2"/>
