@@ -8,13 +8,14 @@ import thumbSoqqa from '../public/images/works/Soqqa/soqqaPoster.png'
 import thumbHyperCasual from '../public/images/works/hyperCasual/Poster.png'
 import thumbKidsGame from '../public/images/works/KidsGame/poster2.jpg'
 import thumbEmptyPoster from '../public/images/works/EmptyPoster/Poster.png'
+import thumbDailyLife from '../public/images/works/DailyLife/Poster.png'
 import thumbMazeGenerator from '../public/images/works/MazeGenerator/MazePoster.png'
 import thumbPrometheus from '../public/images/works/PrometheusQuest/PrometheusPoster.png'
 import thumbBrainBattle from '../public/images/works/BrainBattle/icon.png'
 import thumbNoGoingBack from '../public/images/works/NoGoingBack/NoGoingBackPoster.png'
 import thumbArtistify from '../public/images/works/Multimedia/multi_main.jpg'
 import thumbUzbekTragedy from '../public/images/works/Uzbek Tragedy/menu.png'
-import thumbLaneLine from '../public/images/works/Lane_Line/line.jpg' 
+import thumbLaneLine from '../public/images/works/Lane_Line/line.jpg'
 import Link from "next/link";
 
 const Works = () => (
@@ -61,8 +62,6 @@ const Works = () => (
                         Online Bura card game
                     </WorkGridItem>
                 </Section>
-             
-                
 
 
                 {/*<Section delay={0.1}>*/}
@@ -82,6 +81,13 @@ const Works = () => (
             </Section>
 
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                <Section delay={0.3}>
+                    <WorkGridItem folder="studyWorks" id="dailyLifeOfKLUStudent" thumbnail={thumbDailyLife}
+                                  title="Daily life of the KLU Student">
+                        A Game made under 48th hours <Link href="https://itch.io/jam/6th-winter-game-jam"> in The 6th
+                        Klagenfurt Winter Game Jam </Link>
+                    </WorkGridItem>
+                </Section>
                 <Section delay={0.3}>
                     <WorkGridItem folder="studyWorks" id="emptyPoster" thumbnail={thumbEmptyPoster}
                                   title="Empty Poster">
@@ -152,7 +158,7 @@ const Works = () => (
                         Lane-line detection using OpenCV and python.
                     </WorkGridItem>
                 </Section>
-                
+
             </SimpleGrid>
         </Container>
     </Layout>
