@@ -47,14 +47,14 @@ const Work = () => (
                     <span>
                         <Link href="https://bubblewrapfox.itch.io/dlgses" target="_blank">
                             https://bubblewrapfox.itch.io/dlgses <ExternalLinkIcon mx="2px"/>
-            </Link>
-          </span>
+                        </Link>
+                    </span>
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>
                     <span>
-            Unity
-          </span>
+                        Unity
+                    </span>
                 </ListItem>
                 <ListItem>
                     <Meta>Github Link</Meta>

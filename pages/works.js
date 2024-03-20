@@ -16,6 +16,7 @@ import thumbNoGoingBack from '../public/images/works/NoGoingBack/NoGoingBackPost
 import thumbArtistify from '../public/images/works/Multimedia/multi_main.jpg'
 import thumbUzbekTragedy from '../public/images/works/Uzbek Tragedy/menu.png'
 import thumbLaneLine from '../public/images/works/Lane_Line/line.jpg'
+import thumbMomo from '../public/images/works/Lane_Line/line.jpg'
 import Link from "next/link";
 
 const Works = () => (
