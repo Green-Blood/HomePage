@@ -64,9 +64,10 @@ const Work = () => (
                 </ListItem>
             </List>
 
-            <WorkImage src="/images/works/DailyLife/DailyLife1.png" alt="DailyLife1"/>
-            <WorkImage src="/images/works/DailyLife/DailyLife2.png" alt="DailyLife2"/>
-            <WorkImage src="/images/works/DailyLife/DailyLife3.png" alt="DailyLife3"/>
+            <WorkImage src="/images/works/Momo/Momo1.png" alt="Momo1"/>
+            <WorkImage src="/images/works/Momo/Momo2.png" alt="Momo2"/>
+            <WorkImage src="/images/works/Momo/Momo3.png" alt="Momo3"/>
+            <WorkImage src="/images/works/Momo/Momo4.png" alt="Momo4"/>
         </Container>
     </Layout>
 )
