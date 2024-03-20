@@ -81,13 +81,7 @@ const Works = () => (
             </Section>
 
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                <Section delay={0.3}>
-                    <WorkGridItem folder="studyWorks" id="dailyLifeOfKLUStudent" thumbnail={thumbDailyLife}
-                                  title="Daily life of the KLU Student">
-                        A Game made under 48th hours <Link href="https://itch.io/jam/6th-winter-game-jam"> in The 6th
-                        Klagenfurt Winter Game Jam </Link>
-                    </WorkGridItem>
-                </Section>
+                
                 <Section delay={0.3}>
                     <WorkGridItem folder="studyWorks" id="emptyPoster" thumbnail={thumbEmptyPoster}
                                   title="Empty Poster">
@@ -106,6 +100,13 @@ const Works = () => (
                     </WorkGridItem>
                 </Section>
                 <Section delay={0.3}>
+                    <WorkGridItem folder="studyWorks" id="dailyLifeOfKLUStudent" thumbnail={thumbDailyLife}
+                                  title="Daily life of the KLU Student">
+                        A Game made under 48th hours <Link href="https://itch.io/jam/6th-winter-game-jam"> in The 6th
+                        Klagenfurt Winter Game Jam </Link>
+                    </WorkGridItem>
+                </Section>
+                <Section delay={0.3}>
                     <WorkGridItem folder="studyWorks" id="prometheusQuest" thumbnail={thumbPrometheus}
                                   title="Prometheus Quest">
                         One button game based on Greek mythology
@@ -116,6 +117,12 @@ const Works = () => (
                                   title="(No) Going Back">
                         Really small game made in mini game jam under 5 hours, with the <Link
                         href={"https://twinery.org/"}>Twinery engine</Link>.
+                    </WorkGridItem>
+                </Section>
+                <Section delay={0.3}>
+                    <WorkGridItem folder="studyWorks" id="momo" thumbnail={thumbMomo}
+                                  title="Momo - Hackaton game">
+                        Small game made for hackaton for children with disorders
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
