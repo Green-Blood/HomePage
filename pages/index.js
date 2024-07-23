@@ -44,7 +44,7 @@ const Home = () => (
                 bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                 css={{backdropFilter: 'blur(10px)'}}
             >
-                Hello, I&apos;m a game developer currently based in Klagenfurt, Austria!
+                Hello, I&apos;m a game developer currently based in Tashkent, Uzbekistan!
             </Box>
 
             <Box display={{md: 'flex'}}>
