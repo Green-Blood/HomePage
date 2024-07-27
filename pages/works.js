@@ -17,6 +17,7 @@ import thumbArtistify from '../public/images/works/Multimedia/multi_main.jpg'
 import thumbUzbekTragedy from '../public/images/works/Uzbek Tragedy/menu.png'
 import thumbLaneLine from '../public/images/works/Lane_Line/line.jpg'
 import thumbMomo from '../public/images/works/Momo/MomoMain.png'
+import thumbOvercrowded from '../public/images/works/Overcrowded/Imeage3.jpg'
 import Link from "next/link";
 
 const Works = () => (
@@ -27,6 +28,12 @@ const Works = () => (
             </Heading>
 
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                <Section>
+                    <WorkGridItem folder="enterpriseWorks" id="overcrowded" title="OverCrowded Tycoon"
+                                  thumbnail={thumbOvercrowded}>
+                        Theme park roller coaster tycoon
+                    </WorkGridItem>
+                </Section>
                 <Section>
                     <WorkGridItem folder="enterpriseWorks" id="puzzleRoyale" title="Puzzle Royale"
                                   thumbnail={thumbPuzzleRoyale}>
