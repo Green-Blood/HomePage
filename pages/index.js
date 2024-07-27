@@ -86,15 +86,13 @@ const Home = () => (
                     About
                 </Heading>
                 <Paragraph>
-                    I am a master's student in Game Studies and a full time Unity programmer
-                    currently based in Klagenfurt, Austria with a passion for building creative games
-                    I love working on extendable architecture for projects, as well as being involved in the development
-                    of beautiful graphics.
+                    Hey there! I'm a freshly minted master’s graduate in Game Studies and a full-time Unity programmer, currently rocking it at Datasakura back in my homeland, Uzbekistan. 🌍✨
 
-                    In addition to developing games, I create my own unity course,
+                    With nearly 7 years of Unity experience under my belt, I’m a senior developer mostly immersed in the exciting world of game development. Beautiful graphics? Yep, that’s my jam too! 🎨🕹️
 
-                    I am very interested in a healthy lifestyle and when I am not working, I am learning better ways to
-                    live healthier. I do calisthenics, I love volleyball and swimming.
+                    Aside from creating games, I’m also a Unity course creator, spreading the joy of game-making far and wide. Currently, I'm channeling my passion into developing my own tower defense game. When I’m not coding or teaching, you’ll find me diving into calisthenics, spiking volleyballs, or making a splash in the pool. 🏋️‍♂️🏐🏊‍♂️
+
+                    I’m all about living a healthy lifestyle and constantly on the lookout for better ways to stay fit and happy. Let’s make awesome games and stay healthy together! 💪
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works" passHref scroll={false}>
@@ -110,9 +108,13 @@ const Home = () => (
                     Study Experience
                 </Heading>
                 <BioSection>
-                    <BioYear>2022</BioYear>
-                    Started the Master&apos;s Program at Alpen-Adria-Universität Klagenfurt in Game Studies and
-                    Engineering
+                    <BioYear>2023-2024</BioYear>
+                    Had one semester joint study in Japan, when I have indulged into japanese culture, and learnt a lot about their lifestyle.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022-2024</BioYear>
+                    Studied in Austria at the Master&apos;s Program at Alpen-Adria-Universität Klagenfurt in Game Studies and
+                    Engineering. I've learnt a lot about psychological and social aspects of game development, and had participated in many game jams
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
@@ -136,6 +138,7 @@ const Home = () => (
                 <BioSection>
                     <BioYear>2022</BioYear>
                     Started working as a part-time unity developer in September at <Link href="https://www.datasakura.com//" target="_blank">DataSakura</Link>. outsource company which helped making fruit ninja, cut the rope and etc.
+                    When I came back to Uzbekistan in 2024, changed my contract to full time working week and now i'm full-time employee here.
                 </BioSection>
                 <BioSection>
                     <BioYear>2022</BioYear>
