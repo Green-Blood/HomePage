@@ -18,6 +18,7 @@ import thumbUzbekTragedy from '../public/images/works/Uzbek Tragedy/menu.png'
 import thumbLaneLine from '../public/images/works/Lane_Line/line.jpg'
 import thumbMomo from '../public/images/works/Momo/MomoMain.png'
 import thumbOvercrowded from '../public/images/works/Overcrowded/poster.jpg'
+import thumbBladeBound from '../public/images/works/BladeBound/poster.jpg'
 import Link from "next/link";
 
 const Works = () => (
@@ -32,6 +33,12 @@ const Works = () => (
                     <WorkGridItem folder="enterpriseWorks" id="overcrowded" title="OverCrowded Tycoon"
                                   thumbnail={thumbOvercrowded}>
                         Theme park roller coaster tycoon
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem folder="enterpriseWorks" id="bladebound" title="BladeBound"
+                                  thumbnail={thumbBladeBound}>
+                        RPG adventure game
                     </WorkGridItem>
                 </Section>
                 <Section>
