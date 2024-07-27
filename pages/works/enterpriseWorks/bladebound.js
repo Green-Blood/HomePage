@@ -32,13 +32,13 @@ const Work = () => (
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta>Website</Meta>
-                    <Link href="https://play.google.com/store/apps/details?id=com.artifexmundi.balefire&hl=en">
-                        https://play.google.com/store/apps/details?id=com.artifexmundi.balefire&hl=en <ExternalLinkIcon mx="2px"/>
+                    <Link href="https://bladebound-game.com/">
+                        https://bladebound-game.com/ <ExternalLinkIcon mx="2px"/>
                     </Link>
                 </ListItem>
                 <ListItem>
                     <Meta>Platform</Meta>
-                    <span>iOS/Android</span>
+                    <span><Link href={"https://apps.apple.com/us/app/blade-bound-immortal-darkness/id1198507229"}>iOS</Link>/<Link href={"https://play.google.com/store/apps/details?id=com.artifexmundi.balefire&hl=en"}>Android</Link></span>
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>
@@ -48,8 +48,8 @@ const Work = () => (
             </List>
 
             <WorkImage src="/images/works/BladeBound/image1.jpg" alt="BladeBound"/>
-            <WorkImage src="/images/works/Overcrowded/image2.jpg" alt="BladeBound"/>
-            <WorkImage src="/images/works/Overcrowded/image3.jpg" alt="BladeBound"/>
+            <WorkImage src="/images/works/BladeBound/image2.jpg" alt="BladeBound"/>
+            <WorkImage src="/images/works/BladeBound/image3.jpg" alt="BladeBound"/>
             <AspectRatio maxW="640px" ratio={1.7} my={4}>
                 <iframe src="https://www.youtube.com/embed/h22wJOYXvws"
                         title="Bladebound Gameplay Trailer (Google Play)" frameBorder="0"

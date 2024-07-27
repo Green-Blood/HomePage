@@ -44,12 +44,11 @@ const Work = () => (
             <WorkImage src="/images/works/Overcrowded/image1.jpg" alt="Overcrowded"/>
             <WorkImage src="/images/works/Overcrowded/image2.jpg" alt="Overcrowded"/>
             <AspectRatio maxW="640px" ratio={1.7} my={4}>
-                <iframe
-                    src="https://youtu.be/7qydc6lTFNA"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
+                <iframe src="https://www.youtube.com/embed/7qydc6lTFNA"
+                        title="Overcrowded Tycoon User Acquisition Video" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+                </iframe>
             </AspectRatio>
         </Container>
     </Layout>

@@ -19,6 +19,7 @@ import thumbLaneLine from '../public/images/works/Lane_Line/line.jpg'
 import thumbMomo from '../public/images/works/Momo/MomoMain.png'
 import thumbOvercrowded from '../public/images/works/Overcrowded/poster.jpg'
 import thumbBladeBound from '../public/images/works/BladeBound/poster.jpg'
+import thumbOmNomMerge from '../public/images/works/OmNomMerge/poster.jpg'
 import Link from "next/link";
 
 const Works = () => (
@@ -39,6 +40,12 @@ const Works = () => (
                     <WorkGridItem folder="enterpriseWorks" id="bladebound" title="BladeBound"
                                   thumbnail={thumbBladeBound}>
                         RPG adventure game
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem folder="enterpriseWorks" id="omnommerge" title="Om Nom: Merge"
+                                  thumbnail={thumbOmNomMerge}>
+                        Cute Merge game
                     </WorkGridItem>
                 </Section>
                 <Section>
