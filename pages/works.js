@@ -20,7 +20,7 @@ import thumbMomo from '../public/images/works/Momo/MomoMain.png'
 import thumbOvercrowded from '../public/images/works/Overcrowded/poster.jpg'
 import thumbBladeBound from '../public/images/works/BladeBound/poster.jpg'
 import thumbOmNomMerge from '../public/images/works/OmNomMerge/poster.jpg'
-import thumOmNomRun from '../public/images/works/OmNomRun/poster.jpg'
+import thumbOmNomRun from '../public/images/works/OmNomRun/poster.png'
 import Link from "next/link";
 
 const Works = () => (
@@ -51,7 +51,7 @@ const Works = () => (
                 </Section>
                 <Section>
                     <WorkGridItem folder="enterpriseWorks" id="omnomrun" title="Om Nom: Run"
-                                  thumbnail={thumOmNomRun}>
+                                  thumbnail={thumbOmNomRun}>
                         Cute Run game, from Cut the Rope creators
                     </WorkGridItem>
                 </Section>
