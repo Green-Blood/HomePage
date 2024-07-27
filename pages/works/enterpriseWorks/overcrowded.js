@@ -15,7 +15,7 @@ const Work = () => (
     <Layout title="OverCrowded">
         <Container>
             <Title>
-                Overcrowded <Badge>2023-2024-</Badge>
+                Overcrowded <Badge>2023-2024</Badge>
             </Title>
             <P>
                 
