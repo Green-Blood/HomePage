@@ -12,7 +12,7 @@ import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
 
 const Work = () => (
-    <Layout title="OverCrowded">
+    <Layout title="OmNomRun">
         <Container>
             <Title>
                 Om Nom: Merge <Badge>2022-2023</Badge>
