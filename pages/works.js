@@ -17,7 +17,7 @@ import thumbArtistify from '../public/images/works/Multimedia/multi_main.jpg'
 import thumbUzbekTragedy from '../public/images/works/Uzbek Tragedy/menu.png'
 import thumbLaneLine from '../public/images/works/Lane_Line/line.jpg'
 import thumbMomo from '../public/images/works/Momo/MomoMain.png'
-import thumbOvercrowded from '../public/images/works/Overcrowded/Imeage3.jpg'
+import thumbOvercrowded from '../public/images/works/Overcrowded/image3.jpg'
 import Link from "next/link";
 
 const Works = () => (

@@ -41,8 +41,8 @@ const Work = () => (
 
             </List>
 
-            <WorkImage src="/images/works/Puzzle-Royale/puzzle-image1.jpeg" alt="Puzzle Royale"/>
-            <WorkImage src="/images/works/Puzzle-Royale/puzzle-image2.jpeg" alt="Puzzle Royale"/>
+            <WorkImage src="/images/works/Overcrowded/image1.jpg" alt="Overcrowded"/>
+            <WorkImage src="/images/works/Overcrowded/image2.jpg" alt="Overcrowded"/>
             <AspectRatio maxW="640px" ratio={1.7} my={4}>
                 <iframe
                     src="https://youtu.be/7qydc6lTFNA"
