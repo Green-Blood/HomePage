@@ -52,7 +52,7 @@ const Home = () => (
                     <Heading as="h2" variant="page-title">
                         Jey Odilkhujaev
                     </Heading>
-                    <p>Unity Developer ( Student / Developer / Writer )</p>
+                    <p>Unity Developer ( Creator / Developer / Writer )</p>
                 </Box>
                 <Box
                     flexShrink={0}
@@ -108,11 +108,11 @@ const Home = () => (
                     Study Experience
                 </Heading>
                 <BioSection>
-                    <BioYear>2023-2024</BioYear>
+                    <BioYear>2023-24</BioYear>
                     Had one semester joint study in Japan, when I have indulged into japanese culture, and learnt a lot about their lifestyle.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2022-2024</BioYear>
+                    <BioYear>2022-24</BioYear>
                     Studied in Austria at the Master&apos;s Program at Alpen-Adria-Universität Klagenfurt in Game Studies and
                     Engineering. I've learnt a lot about psychological and social aspects of game development, and had participated in many game jams
                 </BioSection>
