@@ -32,7 +32,7 @@ const Work = () => (
                 </ListItem>
                 <ListItem>
                     <Meta>Platform</Meta>
-                    <span>iOS/Android</span>
+                    <span><Link href={"https://apps.apple.com/us/app/overcrowded-tycoon/id1604391006"}>iOS</Link>/<Link href={"https://play.google.com/store/apps/details?id=com.zeptolab.overcrowded&hl=en"}>Android</Link></span>
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>
