@@ -18,11 +18,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import {GridItem} from '../components/grid-item'
 import {
-    IoLogoTwitter,
     IoLogoInstagram,
     IoLogoGithub,
     IoLogoLinkedin,
-    IoLogoWebComponent,
     IoLogoDiscord
 } from 'react-icons/io5'
 import thumbTelegram from '../public/images/links/Funny-Watermelon.jpg'
@@ -86,13 +84,15 @@ const Home = () => (
                     About
                 </Heading>
                 <Paragraph>
-                    Hey there! I'm a freshly minted master’s graduate in Game Studies and a full-time Unity programmer, currently rocking it at Datasakura back in my homeland, Uzbekistan. 🌍✨
+                    Hey there! I’m a game developer who wears multiple hats—Unity developer, game designer, team lead, and occasional chaos coordinator. Currently, I’m splitting my time between working as a part-time Unity developer at IT Investments Center, where we create hybrid-casual games, and building my own midcore indie game, Hero Arena, under StranGen.
 
-                    With nearly 7 years of Unity experience under my belt, I’m a senior developer mostly immersed in the exciting world of game development. Beautiful graphics? Yep, that’s my jam too! 🎨🕹️
+                    With nearly 7 years of Unity experience, I’ve worked on all sorts of games—from casual mobile titles to deep, strategic experiences. These days, I’m all about creating engaging gameplay that balances accessibility with depth. At ITIC, I focus on hybrid-casual mechanics, while with Hero Arena, I’m diving into the midcore space, crafting a more strategic and immersive experience. Along the way, I also help coordinate projects and refine game design to keep things running smoothly. (Game dev is a team effort, and sometimes you just step in where you're needed! 😄)
 
-                    Aside from creating games, I’m also a Unity course creator, spreading the joy of game-making far and wide. Currently, I'm channeling my passion into developing my own tower defense game. When I’m not coding or teaching, you’ll find me diving into calisthenics, spiking volleyballs, or making a splash in the pool. 🏋️‍♂️🏐🏊‍♂️
+                    But my passion goes beyond just making games—I also love teaching. I’ve created Unity courses, helping newcomers get into game dev without suffering through spaghetti code nightmares.
 
-                    I’m all about living a healthy lifestyle and constantly on the lookout for better ways to stay fit and happy. Let’s make awesome games and stay healthy together! 💪
+                    When I’m not coding or designing, you’ll find me staying active—whether it’s calisthenics, volleyball, swimming, or just trying to live a healthy life (as much as game dev crunch allows).
+
+                    Let’s build cool games and stay fit while doing it! 💪🎮 
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works" passHref scroll={false}>
@@ -109,25 +109,24 @@ const Home = () => (
                 </Heading>
                 <BioSection>
                     <BioYear>2023-24</BioYear>
-                    Had one semester joint study in Japan, when I have indulged into japanese culture, and learnt a lot about their lifestyle.
+                    Spent one semester studying in Japan, getting a firsthand look at how people live and work there. Learned a lot about their culture, discipline, and daily life, while also continuing my studies.
                 </BioSection>
                 <BioSection>
                     <BioYear>2022-24</BioYear>
                     Studied in Austria at the Master&apos;s Program at Alpen-Adria-Universität Klagenfurt in Game Studies and
-                    Engineering. I've learnt a lot about psychological and social aspects of game development, and had participated in many game jams
+                    Engineering. Studied game development, psychology, and the social side of games. Took part in several game jams, worked on projects with other students, and got a deeper understanding of why people play games the way they do.
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
                     Completed Bachelors Program at Inha University in
-                    Tashkent(IUT) in Computer Science and Software Engineering (CSE). Was in IUT Dean’s
-                    list- all editions (2016-2020)
+                    Tashkent(IUT) in Computer Science and Software Engineering (CSE). Made it to the Dean’s List every year from 2016 to 2020.
                 </BioSection>
                 <BioSection>
                     <BioYear>2016</BioYear>
                     Completed 3 year's study as Technician in the adjustment and repair of computers and computer
                     networks in Professional College
                     of
-                    Information Technology
+                    Information Technology. This is where I first got into tech and software, setting the foundation for everything I do now.
                 </BioSection>
 
             </Section>
@@ -136,66 +135,68 @@ const Home = () => (
                     Work Experience
                 </Heading>
                 <BioSection>
-                    <BioYear>2022</BioYear>
-                    Started working as a part-time unity developer in September at <Link href="https://www.datasakura.com//" target="_blank">DataSakura</Link>. outsource company which helped making fruit ninja, cut the rope and etc.
-                    When I came back to Uzbekistan in 2024, changed my contract to full time working week and now i'm full-time employee here.
+                    <BioYear>2024-Present</BioYear>
+                    Working as a part-time Senior Lead Unity Developer at <Link href="https://game.itic.uz/" target="_blank">IT Investments Center</Link>,
+                    creating hybrid-casual mobile games. Focused on gameplay programming, optimization, and feature
+                    development, while also helping with game design and project coordination.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2018-Present</BioYear>
+                    Founder & Lead Developer at StranGen. Started an independent game development team, working on multiple
+                    projects, including my personal mid-core game, Hero Arena.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022-2024</BioYear>
+                    Unity Developer at <Link href="https://www.datasakura.com/" target="_blank">DataSakura</Link>.
+                    Started as a part-time developer in 2022, later transitioning to full-time in 2024. Worked on
+                    outsourced projects, contributing to gameplay mechanics, bug fixes, and optimizations for well-known
+                    games like Fruit Ninja and Cut the Rope.
                 </BioSection>
                 <BioSection>
                     <BioYear>2022</BioYear>
-                    Worked as a full time Unity developer
-                    at <Link href="https://redrift.com/" target="_blank">Redrift</Link>. We created mobile
-                    multiplayer NFT based match3 game called <Link href="https://puzzleroyale.io" target="_blank"> Puzzle Royale</Link>
-                    Finished working on company, because of company's political and economical problems.
+                    Unity Developer at <Link href="https://redrift.com/" target="_blank">Redrift</Link>. Worked on
+                    <Link href="https://puzzleroyale.io" target="_blank">Puzzle Royale</Link>, a multiplayer NFT-based
+                    match-3 game. Focused on gameplay mechanics, network synchronization, and optimizations. Left due to
+                    political and economic challenges affecting the company.
                 </BioSection>
                 <BioSection>
                     <BioYear>2022</BioYear>
-                    Worked part time as Unity developer
-                    at <Link href="https://neotech.uz/en/" target="_blank"> NeoTech </Link> Created together an online
-                    card game, helped with game design
-                    Coordinated the entire game part of the project and did code review
-                    Connected to the backend, added analytics, etc.
-
+                    Unity Developer at <Link href="https://neotech.uz/en/" target="_blank">NeoTech</Link>. Helped develop
+                    an online card game, working on gameplay implementation, backend connections, analytics, and game design.
+                    Also handled code reviews and coordinated development.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2020-22</BioYear>
-                    Worked part time as Unity developer
-                    at <Link href="https://pizzagames.net/" target="_blank">Pizza Games</Link>. Created mobile games for
-                    kids with Unity.
+                    <BioYear>2020-2022</BioYear>
+                    Unity Developer at <Link href="https://pizzagames.net/" target="_blank">Pizza Games</Link>. Created
+                    mobile games for kids, focusing on interactive and educational gameplay.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2020-21</BioYear>
-                    Worked part time as Robotics Teacher
-                    at <Link href="https://bukvaryata.uz/" target="_blank">School Academy</Link>. Taught lego robotics
-                    to small kids in school.
+                    <BioYear>2020-2021</BioYear>
+                    Robotics Teacher at <Link href="https://bukvaryata.uz/" target="_blank">School Academy</Link>. Taught
+                    Lego robotics to kids, introducing them to basic programming and engineering concepts.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2020-21</BioYear>
-                    Worked as Unity developer
-                    at <Link href="https://www.unitedsoft.uz/" target="_blank">UnitedSoft</Link>. Created mobile
-                    hypercasual games with Unity.
-                </BioSection>
-                <BioSection>
-                    <BioYear>2018</BioYear>
-                    Started my own independent and initiative team dedicated to create games called StranGen.
-                </BioSection>
-                <BioSection>
-                    <BioYear>2018-20</BioYear>
-                    Worked as IT technician at White Rock
-                    Completed repairs or submitted replacement orders for equipment that wasn’t performing at capacity.
+                    <BioYear>2020-2021</BioYear>
+                    Unity Developer at <Link href="https://www.unitedsoft.uz/" target="_blank">UnitedSoft</Link>. Developed
+                    hyper-casual mobile games, working on rapid prototyping, game design, and performance optimizations.
                 </BioSection>
 
                 <BioSection>
-                    <BioYear>2017-18</BioYear>
-                    Worked as Full Stack Web-developer
-                    Creating and managing a website <Link href="http://studytokyo.uz/"
-                                                          target="_blank">StudyTokyo</Link> by using Yii2 framework
+                    <BioYear>2018-2020</BioYear>
+                    IT Technician at White Rock. Handled hardware repairs, software troubleshooting, and system upgrades
+                    to ensure smooth operation of company devices.
+                </BioSection>
+
+                <BioSection>
+                    <BioYear>2017-2018</BioYear>
+                    Full Stack Web Developer at <Link href="http://studytokyo.uz/" target="_blank">StudyTokyo</Link>. Developed
+                    and maintained a Yii2-based website for an educational startup, implementing interactive features and
+                    backend functionality.
                 </BioSection>
                 <BioSection>
                     <BioYear>2016</BioYear>
-                    Had an intership as System administrator at <Link href="https://uzinfocom.uz/"
-                                                                      target="_blank">Uzinfocom</Link>. Assessed system
-                    problems with the network, software or hardware components
-                    by running diagnostics, trying solutions and upgrading devices when necessary.
+                    System Administrator Intern at <Link href="https://uzinfocom.uz/" target="_blank">Uzinfocom</Link>. Assisted
+                    with network diagnostics, software configurations, and system troubleshooting.
                 </BioSection>
             </Section>
 
@@ -205,13 +206,8 @@ const Home = () => (
                     I ♥
                 </Heading>
                 <Paragraph>
-                    Sports, Music,{' '}
-                    <Link href="http://arbuzoletters.cyou/" target="_blank">
-                        Writing
-                    </Link>
-                    , Travel,{' '}
-                    Photography
-                    , Guitar, Skateboarding
+                    Sports (calisthenics, volleyball, swimming), writing
+                    photography, guitar, skateboarding, and traveling. Basically, if it keeps me moving or creating, I’m in! 🎸🏐🛹✍️
                 </Paragraph>
             </Section>
 
