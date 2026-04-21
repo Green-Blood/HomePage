@@ -7,37 +7,39 @@ import {
   Stack,
   Heading,
   Flex,
-  Menu,
+  MenuRoot,
   MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
-  useColorModeValue
+  MenuContent,
+  MenuTrigger,
+  IconButton
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { IoMenuOutline } from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+import { useColorModeValue } from '../lib/color-mode'
+import { useRouter } from 'next/router'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('gray.600', 'whiteAlpha.900')
   return (
-    <NextLink href={href} passHref scroll={false}>
-      <Link
-        p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-        target={target}
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <Link
+      as={NextLink}
+      href={href}
+      scroll={false}
+      p={2}
+      bg={active ? 'grassTeal' : undefined}
+      color={active ? '#202023' : inactiveColor}
+      target={target}
+      {...props}
+    >
+      {children}
+    </Link>
   )
 }
 
 const Navbar = props => {
   const { path } = props
+  const router = useRouter()
 
   return (
     <Box
@@ -58,7 +60,7 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+          <Heading as="h1" size="lg" letterSpacing="tighter">
             <Logo />
           </Heading>
         </Flex>
@@ -70,6 +72,7 @@ const Navbar = props => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
+          mr={4}
         >
           <LinkItem href="/works" path={path}>
             Works
@@ -77,43 +80,30 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          {/*<LinkItem*/}
-          {/*  target="_blank"*/}
-          {/*  href="https://github.com/craftzdog/craftzdog-homepage"*/}
-          {/*  path={path}*/}
-          {/*  display="inline-flex"*/}
-          {/*  alignItems="center"*/}
-          {/*  style={{ gap: 4 }}*/}
-          {/*  pl={2}*/}
-          {/*>*/}
-          {/*  <IoLogoGithub />*/}
-          {/*  Source*/}
-          {/*</LinkItem>*/}
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box align="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-              </MenuList>
-            </Menu>
+            <MenuRoot>
+              <MenuTrigger asChild>
+                <IconButton aria-label="Options" variant="outline" size="sm">
+                  <IoMenuOutline />
+                </IconButton>
+              </MenuTrigger>
+              <MenuContent>
+                <MenuItem value="home" onClick={() => router.push('/')}>
+                  About
+                </MenuItem>
+                <MenuItem value="works" onClick={() => router.push('/works')}>
+                  Works
+                </MenuItem>
+                <MenuItem value="posts" onClick={() => router.push('/posts')}>
+                  Posts
+                </MenuItem>
+              </MenuContent>
+            </MenuRoot>
           </Box>
         </Box>
       </Container>

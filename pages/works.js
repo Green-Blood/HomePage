@@ -1,4 +1,4 @@
-import {Container, Heading, SimpleGrid, Divider} from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Separator } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
@@ -102,7 +102,7 @@ const Works = () => (
             </SimpleGrid>
 
             <Section delay={0.2}>
-                <Divider my={6}/>
+                <Separator my={6} />
 
                 <Heading as="h3" fontSize={20} mb={4}>
                     Study Projects
@@ -157,7 +157,7 @@ const Works = () => (
             </SimpleGrid>
 
             <Section delay={0.4}>
-                <Divider my={6}/>
+                <Separator my={6} />
 
                 <Heading as="h3" fontSize={20} mb={4}>
                     Old works
@@ -201,4 +201,3 @@ const Works = () => (
 )
 
 export default Works
-export {getServerSideProps} from '../components/chakra'
