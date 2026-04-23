@@ -2,18 +2,16 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    AspectRatio
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from '../../../components/work'
+import {Title, WorkImage, WorkVideo, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
+import { IoOpenOutline } from 'react-icons/io5'
 
 const Work = () => (
     <Layout title="OmNomRun">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Om Nom: Run <Badge>2022</Badge>
             </Title>
@@ -30,36 +28,31 @@ const Work = () => (
                 DISCOVER AMAZING LOCATIONS: run through busy streets, messy rooftops, underground tunnels, the robot factory and other colorful levels!
                 GET TO THE TOP OF THE LEADERBOARD: gain the highest score in regular competitions to dominate the leaderboard!
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Website</Meta>
                     <Link href="https://www.zeptolab.com/games/om_nom_merge">
-                        https://www.zeptolab.com/games/om_nom_merge <ExternalLinkIcon mx="2px"/>
+                        https://www.zeptolab.com/games/om_nom_merge <IoOpenOutline mx="2px"/>
                     </Link>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span><Link href={"https://apps.apple.com/us/app/om-nom-merge/id1483037067?ls=1"}>iOS</Link>/<Link href={"https://play.google.com/store/apps/details?id=com.zeptolab.omnommerge.google"}>Android</Link></span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
+                </List.Item>
 
-            </List>
+            </List.Root>
 
             <WorkImage src="/images/works/OmNomRun/image1.png" alt="OmNomRun"/>
             <WorkImage src="/images/works/OmNomRun/image2.png" alt="OmNomRun"/>
             <WorkImage src="/images/works/OmNomRun/image3.png" alt="OmNomRun"/>
-            <AspectRatio maxW="640px" ratio={1.7} my={4}>
-                <iframe src="https://www.youtube.com/embed/0kSAMu_jLQ8"
-                        title="Om Nom: Run (English Trailer)" frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            </AspectRatio>
+            <WorkVideo src="https://www.youtube.com/embed/0kSAMu_jLQ8" title="Om Nom: Run (English Trailer)"/>
         </Container>
     </Layout>
 )
 
 export default Work
-export {getServerSideProps} from '../../../components/chakra'
+

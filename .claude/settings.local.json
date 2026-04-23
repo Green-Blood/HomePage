@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Context7__resolve-library-id",
+      "WebSearch",
+      "Bash(node -e \"const m = require\\('./node_modules/@chakra-ui/icons'\\); console.log\\(Object.keys\\(m\\).filter\\(k => k.includes\\('Icon'\\)\\).slice\\(0,10\\)\\)\")",
+      "Bash(node -e \"const m = require\\('./node_modules/@chakra-ui/react'\\); const keys = Object.keys\\(m\\); console.log\\('Menu:', keys.filter\\(k => k.toLowerCase\\(\\).includes\\('menu'\\)\\)\\); console.log\\('Color:', keys.filter\\(k => k.toLowerCase\\(\\).includes\\('color'\\)\\)\\); console.log\\('System:', keys.filter\\(k => k.toLowerCase\\(\\).includes\\('system'\\) || k.toLowerCase\\(\\).includes\\('config'\\) || k.toLowerCase\\(\\).includes\\('create'\\)\\)\\); console.log\\('Has useColorModeValue:', keys.includes\\('useColorModeValue'\\)\\);\")",
+      "Bash(npm install *)",
+      "Bash(node -e \"const m = require\\('./node_modules/@chakra-ui/react'\\); console.log\\('List type:', typeof m.List, Array.isArray\\(m.List\\)\\); console.log\\('ListItem type:', typeof m.ListItem\\); console.log\\('Container type:', typeof m.Container\\); console.log\\('SimpleGrid type:', typeof m.SimpleGrid\\);\")",
+      "Bash(node -e \"const m = require\\('./node_modules/@chakra-ui/react'\\); const L = m.List; console.log\\('List keys:', Object.keys\\(L\\)\\); console.log\\('List.Root type:', typeof L.Root\\); const LI = m.ListItem; console.log\\('ListItem keys:', Object.keys\\(LI\\)\\);\")",
+      "Bash(node -e 'const m = require\\('\\\\''./node_modules/@chakra-ui/react'\\\\''\\); ['\\\\''Container'\\\\'','\\\\''SimpleGrid'\\\\'','\\\\''Box'\\\\'','\\\\''Heading'\\\\'','\\\\''Button'\\\\'','\\\\''Link'\\\\''].forEach\\(k => { const c = m[k]; console.log\\(k + '\\\\'':'\\\\'', typeof c, c && c.$$typeof ? '\\\\''has-$$typeof'\\\\'' : Object.keys\\(c||{}\\).slice\\(0,3\\)\\); }\\);')",
+      "Bash(node C:/Users/blood/.claude/skills/impeccable/scripts/cleanup-deprecated.mjs)",
+      "Bash(node -e ' *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "Bash(npx playwright *)",
+      "Skill(humanizer)",
+      "Skill(humanizer:*)",
+      "Bash(sed -i 's/#c4859c/#a09ec8/g' lib/theme.js components/bio.js pages/index.js)",
+      "Bash(sed -i 's/#9bbfbe/#8fabc0/g' components/bio.js components/grid-item.js components/layouts/main.js pages/index.js)"
+    ]
+  }
+}

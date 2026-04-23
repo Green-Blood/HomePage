@@ -1,22 +1,18 @@
 import {
-    Box,
-    Container,
+        Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    UnorderedList,
     Heading,
-    Center, AspectRatio
+    Center,
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
 
 const Work = () => (
     <Layout title="Clash Of Minds">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Clash of Minds<Badge>2018</Badge>
             </Title>
@@ -30,24 +26,19 @@ const Work = () => (
             </P>
 
 
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span>  <Link href="https://github.com/Green-Blood/BrainBattle">PC</Link></span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>C, Glade, MySQL</span>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
             <WorkImage src="/images/works/BrainBattle/MENU.png" alt="brainBattle"/>
         </Container>
     </Layout>
 )
 
-export default Work
-export
-{
-    getServerSideProps
-}
-    from '../../../components/chakra'
+export default Work

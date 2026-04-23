@@ -2,18 +2,16 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    AspectRatio
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from '../../../components/work'
+import {Title, WorkImage, WorkVideo, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
+import { IoOpenOutline } from 'react-icons/io5'
 
 const Work = () => (
     <Layout title="Empty Poster">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Empty Poster <Badge>2022</Badge>
             </Title>
@@ -39,38 +37,29 @@ const Work = () => (
                 or even seconds :P (Made in 48 hours)
             </P>
 
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Website</Meta>
                     <span>
             <Link href="https://th3dilli.itch.io/empty-poster/" target="_blank">
-              https://th3dilli.itch.io/empty-poster/ <ExternalLinkIcon mx="2px"/>
+              https://th3dilli.itch.io/empty-poster/ <IoOpenOutline mx="2px"/>
             </Link>
           </span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>
             Unity
           </span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Github Link</Meta>
                     <Link href="https://github.com/Green-Blood/Empty-Poster">
-                        Source code <ExternalLinkIcon mx="2px"/>
+                        Source code <IoOpenOutline mx="2px"/>
                     </Link>
-                </ListItem>
-            </List>
-            
-            <AspectRatio maxW="640px" ratio={1.7} my={4}>
-                <iframe
-                    src="https://www.youtube.com/embed/4X6mKip5qlY"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-            </AspectRatio>
+                </List.Item>
+            </List.Root>
+            <WorkVideo src="https://www.youtube.com/embed/4X6mKip5qlY" title="YouTube video player"/>
 
             <WorkImage src="/images/works/EmptyPoster/EmptyPoster1.png" alt="EmptyPoster"/>
             <WorkImage src="/images/works/EmptyPoster/EmptyPoster2.png" alt="EmptyPoster"/>
@@ -79,4 +68,4 @@ const Work = () => (
 )
 
 export default Work
-export {getServerSideProps} from '../../../components/chakra'
+

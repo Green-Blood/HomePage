@@ -1,22 +1,18 @@
 import {
-    Box,
-    Container,
+        Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    UnorderedList,
     Heading,
-    Center, AspectRatio
+    Center,
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
 
 const Work = () => (
     <Layout title="(No) Going Back">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 (No) Going Back<Badge>2022</Badge>
             </Title>
@@ -29,25 +25,20 @@ const Work = () => (
             </P>
 
 
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span>  <Link href="https://green-blood.github.io/-No-Goin-Back//"> Web </Link></span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Twinery</span>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
             <WorkImage src="/images/works/NoGoingBack/NoGoingBack1.png" alt="noGoingBack"/>
             <WorkImage src="/images/works/NoGoingBack/NoGoingBack2.png" alt="noGoingBack"/>
         </Container>
     </Layout>
 )
 
-export default Work
-export
-{
-    getServerSideProps
-}
-    from '../../../components/chakra'
+export default Work

@@ -2,21 +2,18 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
     SimpleGrid,
-    UnorderedList,
     Heading,
-    Center
+    Center,
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
 
 const Work = () => (
     <Layout title="HyperCasuals Games">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Small Mobile HyperCasual games <Badge>2020-2021</Badge>
             </Title>
@@ -28,8 +25,8 @@ const Work = () => (
                 Unfortunately, there are no game builds, but you can see source code in the links below (access is open
                 because they are not published anywhere)
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Games</Meta>
                     <span><Link href="https://github.com/Green-Blood/Kids_Game">  Kids Game</Link>, </span>
                     <span><Link href="https://github.com/Green-Blood/dark_tower">  Dark Tower</Link>, </span>
@@ -37,16 +34,16 @@ const Work = () => (
                     <span><Link href="https://github.com/Green-Blood/Spring-Climber"> Spring Climber</Link>, </span>
                     <span><Link href="https://github.com/Green-Blood/Bolajon"> Bolajon</Link>, </span>
                     <span><Link href="https://github.com/Green-Blood/JellyBox"> Jelly Box </Link> </span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span>iOS/Android</span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
 
             <WorkImage src="/images/works/hyperCasual/Hyper1.png" alt="hyper"/>
             <WorkImage src="/images/works/hyperCasual/Hyper2.png" alt="hyper"/>
@@ -56,9 +53,4 @@ const Work = () => (
     </Layout>
 )
 
-export default Work
-export
-{
-    getServerSideProps
-}
-from '../../../components/chakra'
+export default Work

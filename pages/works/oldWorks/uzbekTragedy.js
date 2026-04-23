@@ -1,22 +1,18 @@
 import {
-    Box,
-    Container,
+        Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    UnorderedList,
     Heading,
-    Center, AspectRatio
+    Center,
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
 
 const Work = () => (
     <Layout title="Uzbek Tragedy">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 The Uzbek Tragedy - Chimgan Edition<Badge>2019</Badge>
             </Title>
@@ -27,21 +23,21 @@ const Work = () => (
 
             <P> More details can be found in design document</P>
 
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>GithubLink</Meta> <span> <Link
                     href="https://github.com/Green-Blood/Uzbek-Tragedy-Chimgan-edition/">https://github.com/Green-Blood/Uzbek-Tragedy-Chimgan-edition</Link></span>
 
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span> Can be built on anything WebGL, Android, IOS, PC, Mac, Linux</span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
             <WorkImage src="/images/works/Uzbek Tragedy/tragedy1.png" alt="tragedy"/>
             <WorkImage src="/images/works/Uzbek Tragedy/tragedy2.png" alt="tragedy"/>
             <WorkImage src="/images/works/Uzbek Tragedy/tragedy3.png" alt="tragedy"/>
@@ -49,9 +45,4 @@ const Work = () => (
     </Layout>
 )
 
-export default Work
-export
-{
-    getServerSideProps
-}
-    from '../../../components/chakra'
+export default Work

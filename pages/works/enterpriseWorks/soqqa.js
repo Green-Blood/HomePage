@@ -2,21 +2,18 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
     SimpleGrid,
-    UnorderedList,
     Heading,
-    Center
+    Center,
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
 
 const Work = () => (
     <Layout title="soqqa">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Soqqa <Badge>2021</Badge>
             </Title>
@@ -30,16 +27,16 @@ const Work = () => (
             <P>
                 This game has been closed.
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span>iOS/Android</span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
             
             <WorkImage src="/images/works/Soqqa/bura2.png" alt="soqqa"/>
             <WorkImage src="/images/works/Soqqa/bura1.png" alt="soqqa"/>
@@ -48,9 +45,4 @@ const Work = () => (
     </Layout>
 )
 
-export default Work
-export
-{
-    getServerSideProps
-}
-    from '../../../components/chakra'
+export default Work

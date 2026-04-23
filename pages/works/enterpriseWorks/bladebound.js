@@ -2,18 +2,16 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    AspectRatio
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from '../../../components/work'
+import {Title, WorkImage, WorkVideo, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
+import { IoOpenOutline } from 'react-icons/io5'
 
 const Work = () => (
     <Layout title="BladeBound">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 BladeBound <Badge>2023</Badge>
             </Title>
@@ -29,37 +27,31 @@ const Work = () => (
             <P>
                 I have briefly worked on it, implementing NFT inventory
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Website</Meta>
                     <Link href="https://bladebound-game.com/">
-                        https://bladebound-game.com/ <ExternalLinkIcon mx="2px"/>
+                        https://bladebound-game.com/ <IoOpenOutline mx="2px"/>
                     </Link>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span><Link href={"https://apps.apple.com/us/app/blade-bound-immortal-darkness/id1198507229"}>iOS</Link>/<Link href={"https://play.google.com/store/apps/details?id=com.artifexmundi.balefire&hl=en"}>Android</Link></span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
+                </List.Item>
 
-            </List>
+            </List.Root>
 
             <WorkImage src="/images/works/BladeBound/image1.jpg" alt="BladeBound"/>
             <WorkImage src="/images/works/BladeBound/image2.jpg" alt="BladeBound"/>
             <WorkImage src="/images/works/BladeBound/image3.jpg" alt="BladeBound"/>
-            <AspectRatio maxW="640px" ratio={1.7} my={4}>
-                <iframe src="https://www.youtube.com/embed/h22wJOYXvws"
-                        title="Bladebound Gameplay Trailer (Google Play)" frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
-                </iframe>
-            </AspectRatio>
+            <WorkVideo src="https://www.youtube.com/embed/h22wJOYXvws" title="Bladebound Gameplay Trailer (Google Play)"/>
         </Container>
     </Layout>
 )
 
 export default Work
-export {getServerSideProps} from '../../../components/chakra'
+

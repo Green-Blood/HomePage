@@ -1,4 +1,5 @@
-import {Container, Heading, SimpleGrid, Divider} from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Separator } from '@chakra-ui/react'
+import { motion, useReducedMotion } from 'framer-motion'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
@@ -21,16 +22,62 @@ import thumbOvercrowded from '../public/images/works/Overcrowded/poster.jpg'
 import thumbBladeBound from '../public/images/works/BladeBound/poster.jpg'
 import thumbOmNomMerge from '../public/images/works/OmNomMerge/poster.jpg'
 import thumbOmNomRun from '../public/images/works/OmNomRun/poster.png'
+import thumbIticPortfolio from '../public/images/works/ITIC/covers/farm-split-platformer-3d.jpg'
+import thumbStrangen from '../public/images/works/StranGen/hero-cover.png'
 import Link from "next/link";
 
-const Works = () => (
+const Works = () => {
+    const shouldReduceMotion = useReducedMotion()
+
+    return (
     <Layout title="Works">
         <Container>
-            <Heading as="h3" fontSize={20} mb={4}>
+            <Section delay={0.05}>
+                <Heading
+                    as={motion.h3}
+                    initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 14 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={shouldReduceMotion ? { duration: 0.01 } : { duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                    variant="section-title"
+                >
+                    Own Company
+                </Heading>
+            </Section>
+
+            <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                <Section delay={0.08}>
+                    <WorkGridItem
+                        folder="ownCompany"
+                        id="strangen"
+                        title="StranGen - Hero Arena"
+                        thumbnail={thumbStrangen}
+                    >
+                        The flagship in-house project: gameplay, direction, and company vision in one place.
+                    </WorkGridItem>
+                </Section>
+            </SimpleGrid>
+
+            <Section delay={0.12}>
+                <Separator my={6} />
+            </Section>
+
+            <Heading
+                as={motion.h3}
+                initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={shouldReduceMotion ? { duration: 0.01 } : { duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                variant="section-title"
+            >
                 Enterprise Works
             </Heading>
 
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                <Section>
+                    <WorkGridItem folder="enterpriseWorks" id="iticPortfolio" title="ITIC Hybrid-Casual Portfolio"
+                                  thumbnail={thumbIticPortfolio}>
+                        Consolidated case study for shipped/prototyped ITIC hybrid-casual titles.
+                    </WorkGridItem>
+                </Section>
                 <Section>
                     <WorkGridItem folder="enterpriseWorks" id="overcrowded" title="OverCrowded Tycoon"
                                   thumbnail={thumbOvercrowded}>
@@ -101,10 +148,10 @@ const Works = () => (
                 {/*</Section>*/}
             </SimpleGrid>
 
-            <Section delay={0.2}>
-                <Divider my={6}/>
+            <Section delay={0.24}>
+                <Separator my={6} />
 
-                <Heading as="h3" fontSize={20} mb={4}>
+                <Heading as="h3" variant="section-title">
                     Study Projects
                 </Heading>
             </Section>
@@ -157,9 +204,9 @@ const Works = () => (
             </SimpleGrid>
 
             <Section delay={0.4}>
-                <Divider my={6}/>
+                <Separator my={6} />
 
-                <Heading as="h3" fontSize={20} mb={4}>
+                <Heading as="h3" variant="section-title">
                     Old works
                 </Heading>
             </Section>
@@ -198,7 +245,6 @@ const Works = () => (
             </SimpleGrid>
         </Container>
     </Layout>
-)
+)}
 
 export default Works
-export {getServerSideProps} from '../components/chakra'

@@ -1,10 +1,13 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { motion, useReducedMotion } from 'framer-motion'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
 import thumbdevlog1 from '../public/images/contents/FirstDevlog.png'
 import thumbdevlog2 from '../public/images/contents/FIRSTENEMY.png'
+import thumbdevlog3 from '../public/images/contents/devlog3-hero-postprocessing.jpg'
+import thumbdevUpdateAI from '../public/images/contents/dev-update-ai-gameplay.jpg'
 // import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
 // import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
 // import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
@@ -13,10 +16,20 @@ import thumbdevlog2 from '../public/images/contents/FIRSTENEMY.png'
 // import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
 // import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
 
-const Posts = () => (
+const Posts = () => {
+  const shouldReduceMotion = useReducedMotion()
+
+  return (
   <Layout title="Posts">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+      <Heading
+        as={motion.h3}
+        initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={shouldReduceMotion ? { duration: 0.01 } : { duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+        fontSize={20}
+        mb={4}
+      >
         Popular Posts
       </Heading>
 
@@ -31,6 +44,16 @@ const Posts = () => (
             title="How to be Prepared for Your First Enemy in a Game and Every Character thereafter. Game Devlog #2"
             thumbnail={thumbdevlog2}
             href="https://www.youtube.com/watch?v=0CR84iUusmQ&t=42s&ab_channel=Strangen"
+          />
+          <GridItem
+            title="First Hero of the game - PostProcessing effects Devlog #3"
+            thumbnail={thumbdevlog3}
+            href="https://youtu.be/_P3AizfbPuc"
+          />
+          <GridItem
+            title="Quick Game Development Update - New AI System and Gameplay Improvements"
+            thumbnail={thumbdevUpdateAI}
+            href="https://youtu.be/ccOZmzhJ2gU"
           />
       {/*    <GridItem*/}
       {/*      title="My Fish workflow"*/}
@@ -76,7 +99,6 @@ const Posts = () => (
       </Section>
     </Container>
   </Layout>
-)
+)}
 
 export default Posts
-export { getServerSideProps } from '../components/chakra'

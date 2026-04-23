@@ -2,18 +2,16 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    AspectRatio
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from '../../../components/work'
+import {Title, WorkImage, WorkVideo, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
+import { IoOpenOutline } from 'react-icons/io5'
 
 const Work = () => (
     <Layout title="Puzzle Royale">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Puzzle Royale <Badge>2022-</Badge>
             </Title>
@@ -21,38 +19,30 @@ const Work = () => (
                 Puzzle Royale is a Match3 Play-to-Earn game combing RPG elements, raid bosses and PVP duels. Assemble
                 your team of heroes and reach the top of the Battle Arena!
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Website</Meta>
                     <Link href="https://puzzleroyale.io/">
-                        https://puzzleroyale.io/ <ExternalLinkIcon mx="2px"/>
+                        https://puzzleroyale.io/ <IoOpenOutline mx="2px"/>
                     </Link>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span>iOS/Android</span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
+                </List.Item>
 
-            </List>
+            </List.Root>
 
             <WorkImage src="/images/works/Puzzle-Royale/puzzle-image1.jpeg" alt="Puzzle Royale"/>
             <WorkImage src="/images/works/Puzzle-Royale/puzzle-image2.jpeg" alt="Puzzle Royale"/>
-            <AspectRatio maxW="640px" ratio={1.7} my={4}>
-                <iframe
-                    src="https://www.youtube.com/embed/nvs7tMlez0s"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-            </AspectRatio>
+            <WorkVideo src="https://www.youtube.com/embed/nvs7tMlez0s" title="YouTube video player"/>
         </Container>
     </Layout>
 )
 
 export default Work
-export {getServerSideProps} from '../../../components/chakra'
+

@@ -1,22 +1,18 @@
 import {
-    Box,
-    Container,
+        Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    UnorderedList,
     Heading,
-    Center, AspectRatio
+    Center,
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
 
 const Work = () => (
     <Layout title="Artistify">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Clash of Minds<Badge>2018</Badge>
             </Title>
@@ -24,41 +20,36 @@ const Work = () => (
                 who is the person, his age, gender and etc. can give a huge amount of benefits to social interactions
                 and law enhancement. To understand the concept the Flask web application was created with the following
                 endorsements:
-                <List>
-                    <ListItem>
+                <List.Root>
+                    <List.Item>
                         <span>Image processing techniques </span>
-                    </ListItem>
-                    <ListItem>
+                    </List.Item>
+                    <List.Item>
                         <span> Number of faces detection</span>
-                    </ListItem>
-                    <ListItem>
+                    </List.Item>
+                    <List.Item>
                         <span> Age and gender detection</span>
-                    </ListItem>
-                    <ListItem>
+                    </List.Item>
+                    <List.Item>
                         <span>Face parts detection</span>
-                    </ListItem>
-                </List>
+                    </List.Item>
+                </List.Root>
             </P>
 
 
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span>  <Link href="https://github.com/Green-Blood/Artistify">Web</Link></span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>OpenCV, Flask, DLlib, Numpy</span>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
             <WorkImage src="/images/works/Multimedia/multimedia.jpg" alt="artistify"/>
         </Container>
     </Layout>
 )
 
-export default Work
-export
-{
-    getServerSideProps
-}
-    from '../../../components/chakra'
+export default Work

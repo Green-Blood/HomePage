@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import { useColorModeValue } from '../lib/color-mode'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -13,11 +14,22 @@ const LogoBox = styled.span`
   padding: 10px;
 
   img {
-    transition: 200ms ease;
+    transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+    transform-origin: center;
   }
 
   &:hover img {
-    transform: rotate(20deg);
+    transform: rotate(14deg) scale(1.03);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    img {
+      transition: none;
+    }
+
+    &:hover img {
+      transform: none;
+    }
   }
 `
 
@@ -26,19 +38,17 @@ const Logo = () => {
 
   return (
     <Link href="/" scroll={false}>
-      <a>
-        <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            ml={3}
-          >
-            Jey Odilkhujaev
-          </Text>
-        </LogoBox>
-      </a>
+      <LogoBox>
+        <Image src={footPrintImg} width={20} height={20} alt="logo" />
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily="'M PLUS Rounded 1c', sans-serif"
+          fontWeight="bold"
+          ml={3}
+        >
+          Jey Odilkhujaev
+        </Text>
+      </LogoBox>
     </Link>
   )
 }

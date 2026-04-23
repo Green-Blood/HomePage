@@ -1,27 +1,13 @@
-import {
-  ChakraProvider,
-  cookieStorageManager,
-  localStorageManager
-} from '@chakra-ui/react'
-import theme from '../lib/theme'
+import { ChakraProvider } from '@chakra-ui/react'
+import { ThemeProvider } from 'next-themes'
+import { system } from '../lib/theme'
 
-export default function Chakra({ cookies, children }) {
-  const colorModeManager =
-    typeof cookies === 'string'
-      ? cookieStorageManager(cookies)
-      : localStorageManager
-
+export default function Chakra({ children }) {
   return (
-    <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
-      {children}
+    <ChakraProvider value={system}>
+      <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
+        {children}
+      </ThemeProvider>
     </ChakraProvider>
   )
-}
-
-export async function getServerSideProps({ req }) {
-  return {
-    props: {
-      cookies: req.headers.cookie ?? ''
-    }
-  }
 }

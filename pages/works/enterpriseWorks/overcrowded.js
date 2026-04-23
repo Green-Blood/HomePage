@@ -2,18 +2,16 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    AspectRatio
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from '../../../components/work'
+import {Title, WorkImage, WorkVideo, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
+import { IoOpenOutline } from 'react-icons/io5'
 
 const Work = () => (
     <Layout title="OverCrowded">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Overcrowded <Badge>2023-2024</Badge>
             </Title>
@@ -23,36 +21,30 @@ const Work = () => (
 
                 Design the most awesome theme park in the world! Your imagination is the limit!
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Website</Meta>
                     <Link href="https://www.zeptolab.com/games/overcrowded-tycoon">
-                        https://www.zeptolab.com/games/overcrowded-tycoon <ExternalLinkIcon mx="2px"/>
+                        https://www.zeptolab.com/games/overcrowded-tycoon <IoOpenOutline mx="2px"/>
                     </Link>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span><Link href={"https://apps.apple.com/us/app/overcrowded-tycoon/id1604391006"}>iOS</Link>/<Link href={"https://play.google.com/store/apps/details?id=com.zeptolab.overcrowded&hl=en"}>Android</Link></span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
+                </List.Item>
 
-            </List>
+            </List.Root>
 
             <WorkImage src="/images/works/Overcrowded/image1.jpg" alt="Overcrowded"/>
             <WorkImage src="/images/works/Overcrowded/image2.jpg" alt="Overcrowded"/>
-            <AspectRatio maxW="640px" ratio={1.7} my={4}>
-                <iframe src="https://www.youtube.com/embed/7qydc6lTFNA"
-                        title="Overcrowded Tycoon User Acquisition Video" frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
-                </iframe>
-            </AspectRatio>
+            <WorkVideo src="https://www.youtube.com/embed/7qydc6lTFNA" title="Overcrowded Tycoon User Acquisition Video"/>
         </Container>
     </Layout>
 )
 
 export default Work
-export {getServerSideProps} from '../../../components/chakra'
+
