@@ -1,22 +1,17 @@
 import {
-    Box,
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    UnorderedList,
-    Heading,
-    Center, AspectRatio
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from '../../../components/work'
+import {Title, WorkImage, WorkVideo, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
+import { IoOpenOutline } from 'react-icons/io5'
 
 const Work = () => (
     <Layout title="Kids Drawing Game">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Coloring Pages<Badge>2021</Badge>
             </Title>
@@ -31,8 +26,8 @@ const Work = () => (
                 will help kids develop creative thinking, as well as better coordination and motor skills. It will teach
                 them how to combine colors and textures.
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span> <Link
                         href="https://apps.apple.com/uz/app/drawing-for-kids-doodle-games/id1557677292?platform=ipad">iOS</Link> /
@@ -40,23 +35,13 @@ const Work = () => (
                             href="https://play.google.com/store/apps/details?id=com.kingogames.coloringpageskidsgame.games">
                             Android
                         </Link></span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
-            </List>
-            <Box>
-                <AspectRatio maxW="640px" ratio={1.7} my={4}>
-                    <iframe
-                        src="https://www.youtube.com/embed/-VxbN3Bfm08"
-                        title="Coloring Pages for Kids"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
-                </AspectRatio>
-            </Box>
+                </List.Item>
+            </List.Root>
+            <WorkVideo src="https://www.youtube.com/embed/-VxbN3Bfm08" title="Coloring Pages for Kids"/>
 
             <WorkImage src="/images/works/KidsGame/image1.jpg" alt="walknote"/>
             <WorkImage src="/images/works/KidsGame/image2.jpg" alt="walknote"/>
@@ -66,4 +51,3 @@ const Work = () => (
 )
 
 export default Work
-

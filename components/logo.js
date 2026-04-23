@@ -14,11 +14,22 @@ const LogoBox = styled.span`
   padding: 10px;
 
   img {
-    transition: 200ms ease;
+    transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+    transform-origin: center;
   }
 
   &:hover img {
-    transform: rotate(20deg);
+    transform: rotate(14deg) scale(1.03);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    img {
+      transition: none;
+    }
+
+    &:hover img {
+      transform: none;
+    }
   }
 `
 

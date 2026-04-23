@@ -2,18 +2,16 @@ import {
     Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    AspectRatio
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
+import { IoOpenOutline } from 'react-icons/io5'
 
 const Work = () => (
     <Layout title="Daily Life of the KLU Student">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Hackaton game Momo<Badge>2022</Badge>
             </Title>
@@ -41,28 +39,28 @@ const Work = () => (
             </P>
 
 
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Website</Meta>
                     <span>
                         <Link href="https://bubblewrapfox.itch.io/dlgses" target="_blank">
-                            https://bubblewrapfox.itch.io/dlgses <ExternalLinkIcon mx="2px"/>
+                            https://bubblewrapfox.itch.io/dlgses <IoOpenOutline mx="2px"/>
                         </Link>
                     </span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>
                         Unity
                     </span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Github Link</Meta>
                     <Link href="https://github.com/Green-Blood/Daily-Life-of-KLU-Student">
-                        Source code <ExternalLinkIcon mx="2px"/>
+                        Source code <IoOpenOutline mx="2px"/>
                     </Link>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
 
             <WorkImage src="/images/works/Momo/Momo1.png" alt="Momo1"/>
             <WorkImage src="/images/works/Momo/Momo2.png" alt="Momo2"/>

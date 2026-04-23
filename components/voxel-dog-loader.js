@@ -12,7 +12,7 @@ export const DogSpinner = () => (
   />
 )
 
-export const DogContainer = forwardRef(({ children }, ref) => (
+export const DogContainer = forwardRef(({ children, ...props }, ref) => (
   <Box
     ref={ref}
     className="voxel-dog"
@@ -22,6 +22,7 @@ export const DogContainer = forwardRef(({ children }, ref) => (
     w={[280, 480, 640]}
     h={[280, 480, 640]}
     position="relative"
+    {...props}
   >
     {children}
   </Box>

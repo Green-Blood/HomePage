@@ -1,22 +1,19 @@
 import {
-    Box,
-    Container,
+        Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    UnorderedList,
     Heading,
-    Center, AspectRatio
+    Center,
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
+import { IoOpenOutline } from 'react-icons/io5'
 
 const Work = () => (
     <Layout title="Maze Generator">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Maze Generator<Badge>2022</Badge>
             </Title>
@@ -26,16 +23,16 @@ const Work = () => (
             <P>
                 Really small maze generator, made with recursive bactracker algorith, also tried first VR implementation here
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span> WebGL, VR</span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Unity</span>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
             <WorkImage src="/images/works/MazeGenerator/Maze1.png" alt="maze"/>
             <WorkImage src="/images/works/MazeGenerator/Maze2.png" alt="maze"/>
         </Container>

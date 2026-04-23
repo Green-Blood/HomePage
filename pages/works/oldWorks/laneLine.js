@@ -1,22 +1,18 @@
 import {
-    Box,
-    Container,
+        Container,
     Badge,
     Link,
-    List,
-    ListItem,
-    UnorderedList,
     Heading,
-    Center, AspectRatio
+    Center,
+    List
 } from '@chakra-ui/react'
-import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../../components/work'
 import P from '../../../components/paragraph'
 import Layout from '../../../components/layouts/article'
 
 const Work = () => (
     <Layout title="Lane line">
-        <Container>
+        <Container className="work-flow">
             <Title>
                 Lane-line-detection<Badge>2020</Badge>
             </Title>
@@ -30,29 +26,24 @@ const Work = () => (
 
             <P> More details can be found in design document</P>
 
-            <List ml={4} my={4}>
-                <ListItem>
+            <List.Root ml={4} my={4}>
+                <List.Item>
                     <Meta>GithubLink</Meta> <span> <Link
                     href="https://github.com/Green-Blood/Lane-line-detection">https://github.com/Green-Blood/Lane-line-detection</Link></span>
 
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Platform</Meta>
                     <span> PC</span>
-                </ListItem>
-                <ListItem>
+                </List.Item>
+                <List.Item>
                     <Meta>Stack</Meta>
                     <span>Python, OpenCV</span>
-                </ListItem>
-            </List>
+                </List.Item>
+            </List.Root>
             <WorkImage src="/images/works/Lane_Line/line.jpg" alt="tragedy"/> 
         </Container>
     </Layout>
 )
 
-export default Work
-export
-{
-    getServerSideProps
-}
-    from '../../../components/chakra'
+export default Work
